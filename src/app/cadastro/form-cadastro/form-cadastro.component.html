@@ -1,0 +1,14 @@
+<p-card header="Coleta de dados" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+  <ng-template pTemplate="content">
+
+    Fala o upload do seu documento aqui.
+
+    <p-fileUpload name="myfile[]" url="./upload.php"
+        accept="image/*" [auto]="true"></p-fileUpload>
+
+  </ng-template>
+  <ng-template pTemplate="footer">
+    Todos os dados serão criptografados
+  </ng-template>
+</p-card>
+
