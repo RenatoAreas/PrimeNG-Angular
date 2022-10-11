@@ -9,9 +9,14 @@ export class FormCadastroComponent implements OnInit {
 
   uploadedFiles: any[] = [];
 
+  options: any;
+
+  overlays: any[] | undefined;
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

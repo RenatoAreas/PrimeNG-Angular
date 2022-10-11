@@ -1,14 +1,25 @@
-<p-card header="Coleta de dados" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-  <ng-template pTemplate="content">
+<div class="grid p-fluid">
+  <p-card header="Coleta de dados"  >
+    <ng-template pTemplate="content">
+      <span class="p-float-label">
+        <input id="float-input" type="text" pInputText>
+        <label for="float-input">Username</label>
+    </span>
+
+    <h5>Show Password</h5>
+    <p-password [toggleMask]="true"></p-password>
 
     Fala o upload do seu documento aqui.
 
-    <p-fileUpload name="myfile[]" url="./upload.php"
-        accept="image/*" [auto]="true"></p-fileUpload>
-
-  </ng-template>
-  <ng-template pTemplate="footer">
-    Todos os dados serão criptografados
-  </ng-template>
-</p-card>
-
+      <p-fileUpload
+        name="myfile[]"
+        url="./upload.php"
+        accept="image/*"
+        [auto]="true"
+      ></p-fileUpload>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      Todos os dados serão criptografados
+    </ng-template>
+  </p-card>
+</div>

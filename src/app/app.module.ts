@@ -10,6 +10,9 @@ import {TableModule} from 'primeng/table';
 import {CalendarModule} from 'primeng/calendar';
 import {FileUploadModule} from 'primeng/fileupload';
 import {HttpClientModule} from '@angular/common/http';
+import {InputTextModule} from 'primeng/inputtext';
+import {PasswordModule} from 'primeng/password';
+import {GMapModule} from 'primeng/gmap';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -32,7 +35,10 @@ import { FormCadastroComponent } from './cadastro/form-cadastro/form-cadastro.co
     TableModule,
     CalendarModule,
     FileUploadModule,
-    HttpClientModule
+    HttpClientModule,
+    InputTextModule,
+    PasswordModule,
+    GMapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
